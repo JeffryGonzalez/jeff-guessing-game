@@ -1,0 +1,23 @@
+<div>
+  <div *ngIf="youWin$ | async"
+       class="alert alert-success">
+    <h2>YOU WIN!</h2>
+  </div>
+  <button (click)="startGame()"
+          class="btn btn-success">Start Game</button>
+</div>
+
+<div>
+  <div class="form-group">
+    <label for="guess">Guess</label>
+    <input class="form-control"
+           type="number"
+           #guess
+           name="guess">
+  </div>
+  <button class="btn btn-primary"
+          (click)="takeGuess(guess)">Guess</button>
+  <p *ngIf="tooHigh$ | async">Your guess was <em>higher</em> than the secret number.</p>
+  <p *ngIf="tooLow$ | async">Your guess was <em>lower</em> than the secret number.</p>
+
+</div>

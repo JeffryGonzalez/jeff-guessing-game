@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "jeff-guessing-game": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "jeff-guessing-game"
+    }
+  },
+  "defaultProject": "jeff-guessing-game",
+  "cli": {
+    "analytics": "1fc83213-86e0-4917-b631-3d7c96b7569e"
+  }
 }
